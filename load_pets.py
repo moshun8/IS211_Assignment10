@@ -38,7 +38,7 @@ try:
     con.commit()
     
 
-except sqlite3.Error, e:
+except lite.Error, e:
     if con:
         con.rollback()
     print "Error {0}".format(e.args[0])
